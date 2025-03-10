@@ -1,0 +1,5 @@
+kw1: INSERT INTO `logowanie` (`id`, `nick`, `haslo`) VALUES ('3', 'Jeremi', 'Jer123');
+kw2: SELECT floor(AVG(rokUr)) AS 'Średni rok urodzenia' FROM uczestnicy;
+kw3: SELECT u.imie, u.nazwisko, l.nick, l.haslo FROM uczestnicy u JOIN logowanie l WHERE u.logowanie_id = l.id AND u.imie LIKE 'J%';
+kw4: CREATE USER uczestnik@localhost IDENTIFIED BY "Ucz123&";
+kw5: GRANT SELECT, UPDATE ON uczestnicy TO uczestnik;
